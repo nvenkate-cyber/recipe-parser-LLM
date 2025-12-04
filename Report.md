@@ -71,6 +71,7 @@ It depends a little on what you consider a temp and how you define relevance, bu
 Invents reasonable substitutions. Also understands Vegetarian/Vegan substitution options: 
 - What can I substitute for chicken if I am vegetarian?
 - Plant-Based Chicken Substitutes: Look for vegetarian or vegan chicken strips or pieces in the frozen or refrigerated section of your grocery store. Brands like Gardein, MorningStar Farms, or Beyond Meat often have good options that will mimic the texture well. You'll want to dice them just like the cooked chicken.
+
 The parser may be able to compete if it had a large dataset of substitutions built in, but the LLM has a better understanding of "Vegetarian" and can find better substitutes.
 
 ### Understanding Vague Phrases
@@ -79,6 +80,7 @@ __(At LLM Step 4)__
 - What was the temp? 
 - The oven temperature for this recipe is **350 degrees F (175 degrees C)**, as stated in Step 1.
 - For Step 4, where you're making the sauce on the stovetop, you'll be using **medium heat** for your saucepan.
+
 The AI has the advantage where it can list multiple responses to answer questions with vagueness or multiple relevant options, which dispenses vagueness.
 
 ### Recognizing safety concerns outside of the recipe
@@ -89,4 +91,5 @@ __(At LLM Step 1)__ "Preheat an oven to 350 degrees F (175 degrees C). Lightly g
   Here's why:
   1.  **Safety Hazard:** Aerosol cooking sprays are highly flammable, and spraying them into a hot oven can create a fire risk.
   2.  **Ineffective Coating:** The heat from the oven would cause the grease to evaporate or burn off almost immediately, preventing it from properly coating the dish and creating the non-stick layer you need.
+
 The LLM has more information at it's disposal about how things may interact (like aerosol and heat) and can make those distinctions where the parser cannot.
