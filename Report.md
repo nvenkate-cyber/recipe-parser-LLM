@@ -60,6 +60,7 @@ These parsing issues indicate that it may not be directly parsing the recipe, bu
 __(At LLM Step 4): Melt butter in a medium saucepan over medium heat...__
 - What is the most relevant temp?
 - The most relevant temperature, given in specific degrees, is the **oven temperature of 350 degrees F (175 degrees C)**. 
+
 It depends a little on what you consider a temp and how you define relevance, but the natural answer seems like it should be "medium heat" given that you are not using the oven in this step. The LLM is aware of Medium Heat as a temperature because it answers correctly on "What is the most relevant temp for step 4?" This indicates it may not be directly keeping track of steps.
 
 
